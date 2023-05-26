@@ -38,7 +38,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">Мэндээ гэж яг хэн бэ?</h1>
-                    <p>Түүний нэр бол Б. Мэндсайхан. Одоогийн байдлаар үүнээс өөр мэдээлэл бидэнд олдоогүй байна.</p>
+                    <p>Түүний нэр бол Б. Мэндсайхан. Одоогийн байдлаар бидэнд дараах мэдээллүүд олдоод байна.</p>
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Үзэгдэх болсон газрууд</p>
                             <p class="tab-links" onclick="opentab('experience')">Хамсаатнууд</p>
@@ -251,8 +251,9 @@
         width: '1849',
         videoId: 'xMFyvFH2k1U',
         playerVars: {
-          'autoplay': 0,
-          'start': 97 
+          'autoplay': 0,  /* Бодоод байсан очихоор autplay шаацан байж байвал уг нь гоё доо */
+          'start': 97,
+          'mute' : 0      /* Зүгээр чимээгүй шаавал бас гоё тэ */
         }
       });
     }
