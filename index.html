@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Миний Танилцуулга</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/629e80f23b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./Images/" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Нүүр</a></li>
+                    <li><a href="#about">Мэндээгийн Тухай</a></li>
+                    <li><a href="#services">Төслийг Зорилго</a></li>
+                    <li><a href="#portfolio">Хийгдэх Алхамууд</a></li>
+                    <li><a href="#contact">Нэгдэх</a></li>
+                    <i class="fa-solid fa-circle-xmark icon-bar" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars icon-bar" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Project:All_Eyes_on_Mendee</p>
+                <h1>Сайн уу?<br>Намайг<br><span>Мэндээ</span><br> гэдэг.</h1>
+            </div>
+        </div> 
+    </div>
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Images/Anonymous.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Мэндээ гэж яг хэн бэ?</h1>
+                    <p>Түүний нэр бол Б. Мэндсайхан. Одоогийн байдлаар үүнээс өөр мэдээлэл бидэнд олдоогүй байна.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Үзэгдэх болсон газрууд</p>
+                            <p class="tab-links" onclick="opentab('experience')">Хамсаатнууд</p>
+                            <p class="tab-links" onclick="opentab('education')">Дэлхийн Түүхээс Устгагдсан Цол Хэргэмүүд</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>70 Давхар</span><br>1999 онд хэсэг бүлэг залуус шөнийн 3 цагийн үед Мэндээтэй таарсан гэх болсон байна.</li>
+                                <li><span>40 Мянгат</span><br>2002 оны 8 сарын 8 гэх энэ өдөр Мэндээ хоёр дахь удаагаа үзэгдсэн нь тохиолдол байсангүй</li>
+                                <li><span>Чингисийн Талбай</span><br>2008 оны 7 сарын 1-ний өдөр Мэндээ нь МАНын төв байр болон Соёлын Төвийг шатааж Улаанбаатар хот даяар үймээн дэгдээсэн байна. .</li>
+                                <li><span>Ascent</span><br>Гараад удаагүй байгаа 2023 оны 4-5 сарын үеэр Мэндээ нь Bind дээр үзэгдэх болсон бөгөөд хэд хэдэн хүнийг хэдийн хохироогоод байгаа аж.</li>
+
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Мэндээ</span><br>Анхдагч Мэндээ илэрснээс хойших хоёрдугаар Мэндээ</li>
+                                <li><span>Мэндээ</span><br>3 болон 4 дэх Мэндээ илэрч хэт их олширсноос хойш гарсан хамгийн алдартай Мэндээ.</li>
+                                <li><span>Адольф Гитлер</span><br>1934-1945 оны хооронд Дэлхийн II дайн үүсэх шалтгааныг тавихад тус хүн нь Мэндээтэй шууд холбоотой байсан.</li>                             
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>1934-1945</span><br>Алтан Мэндээ</li>
+                                <li><span>2017-2018</span><br>Онц Мэндээ</li>
+                                <li><span>2019-2020</span><br>Мундаг Мэндээ</li>
+                                <li><span>2021</span><br>Гоовид Мэндээ</li>         
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Services-->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Төслийн Зорилго</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-peace"></i>
+                <h2>Дэлхийн Энх Тайван</h2>
+                <p>Хүн хоорондын маргаанаас эхлэн улс хоорондын маргааныг хүртэл Мэндээ цэвэр өөрийн биеэр үүсгэдэг нь тогтоогдоод байна.
+                </p>
+                <a href="#">Нэмэлт...</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-house-crack"></i>
+                <h2>Байгалийн Гамшгуудаас Сэргийлэх</h2>
+                <p>Бидний сүүлийн 15 жил хийсэн судалгаагаар Мэндээ нь дэлхий үүсдэг ихэнх байгалийн гамшгуудын эх үүсвэр юм.
+                </p>
+                <a href="#">Нэмэлт...</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-scale-balanced"></i>
+                <h2>Бохирдол, Хууран Мэхлэлтгүй Улс Төр</h2>
+                <p>Урьд өмнө нь мөнгө угааж, улс төрийн гэмт хэрэг үйлдсэн ихэнх хуульчид, улс төрчдийн 100% нь Мэндээтэй шууд хамааралтай байсан байна.
+                </p>
+                <a href="#">Нэмэлт...</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Илэрсэн Түүхтэй Улс Орнууд</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Japan.png">
+                <div class="layer">
+                    <h3>Япон</h3>
+                    <p>Арлын Япон оронд тогтмол байгалийн гамшиг болдог нь мэдээж Мэндээтэй холбоотой.</p>
+                    <a href="#"><i class="fa-solid fa-bomb"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Britain.png">
+                <div class="layer">
+                    <h3>Англи</h3>
+                    <p>Английн үхэшгүй хатан хаан Хоёрдугаар Элизабет-ийн насан өөд болсон хэрэг ч бас Мэндээтэй хамааралтай.</p>
+                    <a href="#"><i class="fa-solid fa-skull"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Korea.png">
+                <div class="layer">
+                    <h3>Солонгос</h3>
+                    <p>Солонгосчуудын амиа хорлолтын тоо хэмжээ бусад улс орнуудаас хэт илүү байгаа нь улс доторх гадуурхалтай холбоотой
+                        хэмээн бодож байж болох ч яг үнэндээ нэг л хүн үүний ард бий.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-radiation"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Нэмэлт...</a>
+    </div>
+</div>
+
+<!-- Contact -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Надтай Холбогдох</h1>             
+                <p><i class="fa-solid fa-paper-plane"></i>hugoballss0708@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+976 99265563</p>
+                <h2 class="sub-title-2"> <i class="fa-solid fa-circle-dollar-to-slot additional-icons"></i> Тэмцэлд Хандив өргөх : <a href="https://www.xacbank.mn/"><i class="fa-solid fa-money-bill"></i></a></h2>
+                <p>Xacbank 5005430411</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100027335686834"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@BoldogguiBorMendee/videos"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/__mendee__bna/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://cdn.discordapp.com/attachments/843384703104450571/1111543720878280735/image.png"><i class="fa-brands fa-discord"></i></a>
+                </div>
+                <a href="./Images/CH.Naransolongo-CV.pdf" download class="btn btn2">CV Татаж Авах</a>
+            </div>
+            <div class="contact-right"></div>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Таны Нэр" required>
+                    <input type="text" name="Email" placeholder="Таны И-Мэйл" required>
+                    <textarea name="Message" rows="6" placeholder="Мэндээд зориулж илгээх үг"></textarea>
+                    <button type="submit" class="btn btn2">Илгээх</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div id="player"></div>
+
+
+    <div class="copyright">
+        <p>Copyright © HugoBallss. Made with <i class="fa-solid fa-heart"></i> ;D</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwG4uTyc86bp_hEveb8VFPoMac5EhfDh8B5HPYCsHGHbBYq7dBsH0fQb0evW1iUZPh2dA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = ""
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+  <script>
+
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+    var player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '760',
+        width: '1849',
+        videoId: 'xMFyvFH2k1U',
+        playerVars: {
+          'autoplay': 0,
+          'start': 97 
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
