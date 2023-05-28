@@ -13,13 +13,14 @@
         <div class="container">
             <nav>
                  <a href="https://www.youtube.com/watch?v=DbrdR16sHjk"><img src="Images/Logo.png" class="Logo" width="150px" height="250px"></a>
-                <ul id="sidemenu">
+                <ul id="sidemenu"><div class="side-contents">
                     <li><a href="#header">Нүүр</a></li>
                     <li><a href="#about">Мэндээгийн Тухай</a></li>
                     <li><a href="#services">Төслийн Зорилго</a></li>
                     <li><a href="#portfolio">Хийгдэх Алхамууд</a></li>
                     <li><a href="#contact">Нэгдэх</a></li>
                     <i class="fa-solid fa-circle-xmark icon-bar" onclick="closemenu()"></i>
+                </div>
                 </ul>
                 <i class="fa-solid fa-bars icon-bar" onclick="openmenu()"></i>
             </nav>
@@ -41,7 +42,7 @@
                     <p>Түүний нэр бол Б. Мэндсайхан. Одоогийн байдлаар бидэнд дараах мэдээллүүд олдоод байна.</p>
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Үзэгдэх болсон газрууд</p>
-                            <p class="tab-links" onclick="opentab('experience')">Хамсаатнууд</p>
+                            <p class="tab-links exp" onclick="opentab('experience')">Хамсаатнууд</p>
                             <p class="tab-links" onclick="opentab('education')">Дэлхийн Түүхээс Устгагдсан Цол Хэргэмүүд</p>
                             <p class="tab-links" onclick="opentab('traits')">Гэрчийн Мэдүүлгүүд</p>
                         </div>
@@ -233,7 +234,7 @@
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
-    })
+    })  
   </script>
 
 

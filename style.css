@@ -394,34 +394,51 @@ nav .icon-bar{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(./Images/images/phone-background.png);
+        background-image: url(./Images/Mendee2.jpg);
+        background-size: cover;
     }
     .header-text{
         margin-top: 100%;
         font-size: 16px;
     }
+    .Logo{
+        margin-left: auto;
+    }
+    #sidemenu{
+    padding-left: 200px;
+}
     .header-text h1{
         font-size: 30px;
     }
     nav .icon-bar{
         display: block;
         font-size: 25px;
+        color: #29c931;
+    }
+    .side-contents{
+        margin-right: 200px;
     }
     nav ul{
         background: #29c931;
         position: fixed;
         top: 0;
         right: -200px;
-        width: 200px;
-        height: 100vh;
+        width: 150px;
+        height: 1000vh;
         padding-top: 50px;
         z-index: 2;
-        transition: right 0.5s;
+        transition: left 0.5s;
     }
     nav ul li{
         display: block;
         margin: 25px;
 
+    }
+    #experience{
+        display: none;
+    }
+    .exp{
+        display: none;
     }
     nav ul .icon-bar{
         position: absolute;
@@ -451,6 +468,9 @@ nav .icon-bar{
     .copyright{
         font-size: 14px;
     }
+    #player{
+        display: none;
+    }
     
 }
 
@@ -459,5 +479,4 @@ nav .icon-bar{
     margin-top: -40px;
     display: block;
     margin-left: 560px;
-    
 }
