@@ -61,7 +61,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #29c931;
+    background: #28d8a3;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -391,6 +391,10 @@ nav .icon-bar{
     display: none;
 }
 
+.msg{
+    display: none;
+}
+
 
 @media only screen and (max-width: 600px){
     #header{
@@ -412,11 +416,16 @@ nav .icon-bar{
     }
     nav .icon-bar{
         display: block;
-        font-size: 25px;
-        color: #29c931;
+        font-size: 15px;
+        color: #fff;
+        background-color: #29c931;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        padding: 10px;
+        margin-top: -75px;
     }
     .side-contents{
-        margin-right: 200px;
+        display: none;
     }
     nav ul{
         background: #29c931;
@@ -434,6 +443,11 @@ nav .icon-bar{
         margin: 25px;
 
     }
+    nav ul li a{
+        margin-right: 150px;
+
+    }
+
     #experience{
         display: none;
     }
@@ -469,14 +483,8 @@ nav .icon-bar{
         font-size: 14px;
     }
     #player{
-        display: none;
+        width: auto;
+        height: auto;
     }
     
-}
-
-#msg{
-    color: #696969;
-    margin-top: -40px;
-    display: block;
-    margin-left: 560px;
 }

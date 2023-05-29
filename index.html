@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project: All Eyes On Mendee</title>
+    <title class="back">Project: All Eyes On Mendee</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/629e80f23b.js" crossorigin="anonymous"></script>
 </head>
@@ -18,11 +18,9 @@
                     <li><a href="#about">Мэндээгийн Тухай</a></li>
                     <li><a href="#services">Төслийн Зорилго</a></li>
                     <li><a href="#portfolio">Хийгдэх Алхамууд</a></li>
-                    <li><a href="#contact">Нэгдэх</a></li>
-                    <i class="fa-solid fa-circle-xmark icon-bar" onclick="closemenu()"></i>
+                    <li><a href="#contact">Нэгдэх</a></li>          
                 </div>
                 </ul>
-                <i class="fa-solid fa-bars icon-bar" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Project:All_Eyes_on_Mendee</p>
@@ -67,7 +65,7 @@
                                 <li><span>1934-1945</span><br>Спирт Мэндээ</li>
                                 <li><span>2017-2018</span><br>Тамхичин Мэндээ</li>
                                 <li><span>2019-2020</span><br>Анагаахын Архичин Мэндээ</li>
-                                <li><span>2021</span><br>Гоовид Мэндээ</li>         
+                                <li><span>2021</span><br>Цахим Тамхичин Мэндээ</li>         
                             </ul>
                         </div>
                         <div class="tab-contents" id="traits">   <!-- Энд гэрчийн мэдүүлэг авч байгаа -->
@@ -148,7 +146,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">Нэмэлт...</a>
+        
     </div>
 </div>
 
@@ -176,7 +174,9 @@
                     <input type="text" name="Name" placeholder="Таны Нэр" required>
                     <input type="text" name="Email" placeholder="Таны И-Мэйл" required>
                     <textarea name="Message" rows="6" placeholder="Мэндээд зориулж илгээх үг"></textarea>
-                    <button type="submit" class="btn btn2">Илгээх</button>
+                    <div class="message" id="message"></div>
+                    <button type="submit" class="btn btn2" onclick="handleButtonClick()">Илгээх</button>
+                    
                 </form>
                 <span id="msg"></span>
             </div>
@@ -209,14 +209,25 @@
 </script>
 
 <script>
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0";
+    
+    function handleButtonClick() {
+      var messageElement = document.getElementById("message");
+
+      if (messageElement.style.display === "Илгээж байна...") {
+        messageElement.innerText = "Писда илгээж байна гээд байгаа биз дээ писда вэ писда чинь";
+        messageElement.style.display = "block";
+      } else {
+        messageElement.innerText = "Илгээж байна...";
+        messageElement.style.display = "block";
+      } {
+        
+
+        setTimeout(function() {
+          messageElement.style.display = "none";
+        }, 3000);
+      }
     }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-</script>
+  </script>
   
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwG4uTyc86bp_hEveb8VFPoMac5EhfDh8B5HPYCsHGHbBYq7dBsH0fQb0evW1iUZPh2dA/exec'
@@ -232,6 +243,11 @@
                 msg.innerHTML = ""
             },5000)
             form.reset()
+            messageElement.style.innerText = "Амжилттай Илгээгдлээ!"
+            messageElement.style.display = "block";
+            setTimeout(function() {
+          messageElement.style.display = "none";
+        }, 3000);
         })
         .catch(error => console.error('Error!', error.message))
     })  
@@ -257,6 +273,20 @@
           'mute' : 0      /* Зүгээр чимээгүй шаавал бас гоё тэ */
         }
       });
+    }
+  </script>
+   <script>
+    // Function to increment the count and update the display
+    function incrementCount() {
+      // Get the current count from the span element
+      var countElement = document.getElementById("count");
+      var count = parseInt(countElement.innerText);
+
+      // Increment the count by 1
+      count += 1;
+
+      // Update the count in the span element
+      countElement.innerText = count;
     }
   </script>
 
